@@ -23,6 +23,9 @@ LOCAL_JAVA_LIBRARIES := bouncycastle conscrypt
 LOCAL_PACKAGE_NAME := KeyChain
 LOCAL_CERTIFICATE := platform
 
+# Enable dexpreopt to speed boot time
+WITH_DEXPREOPT := true
+
 include $(BUILD_PACKAGE)
 
 # additionally, build unit tests in a separate .apk
